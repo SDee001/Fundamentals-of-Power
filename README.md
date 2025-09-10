@@ -6,7 +6,7 @@ This project includes both the **book (PDF)** and a **landing page** where visit
 ---
 
 ## 🌐 Live Demo
-👉 [Visit the Landing Page]([https://your-username.github.io/your-repo/](https://sdee001.github.io/Fundamentals-OF-Power/))  
+👉 [Visit the Landing Page](https://your-username.github.io/your-repo/](https://sdee001.github.io/Fundamentals-OF-Power/)  
 
 ---
 
