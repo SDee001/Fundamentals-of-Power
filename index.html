@@ -103,20 +103,23 @@
 
   <!-- CounterAPI Client -->
   <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
- <script>
-  document.addEventListener("DOMContentLoaded", async () => {
-    const counter = new Counter({
-      workspace: "fundamentals-of-power" // Replace with your actual workspace
-    });
+<script>
+  const counter = new Counter({
+    workspace: "fundamentals-of-power",
+    accessToken: "ut_JgO9Z9DTSVvFQGvacVspUDzVg7k1B3YdNxKp8UU7"
+  });
 
+  async function updateCounter() {
     try {
-      const result = await counter.up("page-views"); // Replace with your actual counter name
+      const result = await counter.up("fundamentals-of-power"); // your counter name
       document.getElementById("viewStat").textContent = `👁️ ${result.count} Visitors`;
     } catch (error) {
       console.error("Counter error:", error.message);
       document.getElementById("viewStat").textContent = "👁️ Counter error";
     }
-  });
+  }
+
+  updateCounter();
 </script>
 </body>
 </html>
