@@ -6,7 +6,7 @@ This project includes both the **book (PDF)** and a **landing page** where visit
 ---
 
 ## 🌐 Live Demo
-👉 [Visit the Landing Page](https://your-username.github.io/your-repo/)  
+👉 [Visit the Landing Page]([https://your-username.github.io/your-repo/](https://sdee001.github.io/Fundamentals-OF-Power/))  
 
 ---
 
@@ -22,7 +22,7 @@ It uses **real data and infrastructure from campus** (transformers, solar PV, su
 ---
 
 ## 📥 Download
-[📘 Download the Book (PDF)](./Fundamentals.pdf)
+[📘 Download the Book (PDF)](https://drive.google.com/file/d/1iLbJbGCXNqMaMUQCCltGpxHqPND1XzQK/view?usp=sharing)
 
 ---
 
@@ -35,11 +35,3 @@ The landing page is built with:
 The visitor counter uses a **public CounterAPI workspace**:  
 - Workspace: `fundamentals-of-power`  
 - Counter: `page-views`
-
----
-
-## ⚡ How to Host on GitHub Pages
-1. Fork or clone this repo.  
-2. Go to **Settings → Pages** in your GitHub repository.  
-3. Under "Source", select **`main` branch → `/root` folder**.  
-4. Save, then your landing page will be available at:  
