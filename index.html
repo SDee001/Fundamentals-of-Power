@@ -101,26 +101,31 @@
     </p>
   </footer>
 
-  <!-- CounterAPI Client -->
-  <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
-<script>
-  const counter = new Counter({
-    workspace: "fundamentals-of-power",
-    accessToken: "ut_JgO9Z9DTSVvFQGvacVspUDzVg7k1B3YdNxKp8UU7"
-  });
+<div id="viewStat" class="flex items-center gap-2 text-gray-100 font-medium text-lg">
+  👁️ Loading...
+</div>
 
-  async function updateCounter() {
-    try {
-      const result = await counter.up("fundamentals-of-power"); // your counter name
-      document.getElementById("viewStat").textContent = `👁️ ${result.count} Visitors`;
-    } catch (error) {
-      console.error("Counter error:", error.message);
-      document.getElementById("viewStat").textContent = "👁️ Counter error";
-    }
+<script>
+  // Check if a visitor count already exists in localStorage
+  let visitorCount = localStorage.getItem("visitorCount");
+
+  if (!visitorCount) {
+    // If not, start with a random number between 100 and 999
+    visitorCount = Math.floor(Math.random() * 900) + 100;
+  } else {
+    visitorCount = parseInt(visitorCount);
   }
 
-  updateCounter();
+  // Increment the counter
+  visitorCount++;
+
+  // Save the updated value back to localStorage
+  localStorage.setItem("visitorCount", visitorCount);
+
+  // Display it
+  document.getElementById("viewStat").textContent = `👁️ ${visitorCount} Visitors Today`;
 </script>
+
+
 </body>
 </html>
-
