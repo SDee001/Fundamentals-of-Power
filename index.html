@@ -102,20 +102,20 @@
 
 
 <script>
-
-  let visitorCount = localStorage.getItem("visitorCount");
+  let visitorCount = sessionStorage.getItem("visitorCount");
 
   if (!visitorCount) {
-    visitorCount = Math.floor(Math.random() * 900) + 100;
+    // First time in this session → pick random between 5–40
+    visitorCount = Math.floor(Math.random() * (40 - 5 + 1)) + 5;
   } else {
     visitorCount = parseInt(visitorCount);
+    visitorCount++;
   }
 
-  visitorCount++;
+  // Save updated value in sessionStorage
+  sessionStorage.setItem("visitorCount", visitorCount);
 
-
-  localStorage.setItem("visitorCount", visitorCount);
-
+  // Display visitor count
   document.getElementById("viewStat").textContent = `👁️ ${visitorCount} Visitors Today`;
 </script>
 
