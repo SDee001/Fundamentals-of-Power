@@ -26,12 +26,3 @@ It uses **real data and infrastructure from campus** (transformers, solar PV, su
 
 ---
 
-## 🖥️ Landing Page
-The landing page is built with:
-- **HTML5 + TailwindCSS**  
-- **Animated background** for a modern look  
-- **CounterAPI** integration to track total visitors  
-
-The visitor counter uses a **public CounterAPI workspace**:  
-- Workspace: `fundamentals-of-power`  
-- Counter: `page-views`
