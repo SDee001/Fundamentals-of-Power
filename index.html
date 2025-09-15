@@ -102,22 +102,34 @@
 
 
 <script>
-  let visitorCount = sessionStorage.getItem("visitorCount");
+  function getLiveViewers() {
+    
+    let rand = Math.random();
 
-  if (!visitorCount) {
-    // First time in this session → pick random between 5–40
-    visitorCount = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
-  } else {
-    visitorCount = parseInt(visitorCount);
-    visitorCount++;
+    if (rand < 0.98) {
+   
+      return 1;
+    } else if (rand < 0.995) {
+      
+      return 2;
+    } else {
+      
+      return Math.floor(Math.random() * 2) + 3; 
+    }
   }
 
-  // Save updated value in sessionStorage
-  sessionStorage.setItem("visitorCount", visitorCount);
+  function updateViewers() {
+    const viewers = getLiveViewers();
+    document.getElementById("viewStat").textContent = `👁️ ${viewers} Live Viewer${viewers > 1 ? 's' : ''}`;
+  }
 
-  // Display visitor count
-  document.getElementById("viewStat").textContent = `👁️ ${visitorCount} Visitors Today`;
+ 
+  updateViewers();
+
+  
+  setInterval(updateViewers, Math.floor(Math.random() * 5000) + 5000);
 </script>
+
 
 
 </body>
