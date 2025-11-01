@@ -10,14 +10,14 @@ This project includes both the **book (PDF)** and a **landing page** where visit
 
 ---
 
-## 📖 About the Book
+##  About the Book
 The handbook bridges the gap between **theory and practice** in Electrical Power Generation, Transmission, and Distribution.  
 It uses **real data and infrastructure from campus** (transformers, solar PV, substation, bills) to help juniors learn concepts that connect directly to real-world systems.
 
 ### Key Features
-- ⚡ **Practical Learning**: Observe real campus systems and map them to core theory.  
-- 📊 **Key Topics**: Power generation, transmission, load analysis, distribution, renewables, and more.  
-- 🎓 **For Juniors**: Tailored to build strong foundations and inspire curiosity.  
+-  **Practical Learning**: Observe real campus systems and map them to core theory.  
+-  **Key Topics**: Power generation, transmission, load analysis, distribution, renewables, and more.  
+-  **For Juniors**: Tailored to build strong foundations and inspire curiosity.  
 
 ---
 
