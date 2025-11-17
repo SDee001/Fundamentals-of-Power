@@ -101,36 +101,6 @@
   </footer>
 
 
-<script>
-  function getLiveViewers() {
-    
-    let rand = Math.random();
-
-    if (rand < 0.98) {
-   
-      return 1;
-    } else if (rand < 0.995) {
-      
-      return 2;
-    } else {
-      
-      return Math.floor(Math.random() * 2) + 3; 
-    }
-  }
-
-  function updateViewers() {
-    const viewers = getLiveViewers();
-    document.getElementById("viewStat").textContent = `👁️ ${viewers} Live Viewer${viewers > 1 ? 's' : ''}`;
-  }
-
- 
-  updateViewers();
-
-  
-  setInterval(updateViewers, Math.floor(Math.random() * 5000) + 5000);
-</script>
-
-
 
 </body>
 </html>
