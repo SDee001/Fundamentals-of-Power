@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>EE Collective</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/s9g6chXV/github-1051377.png">
+ <meta name="description" content="EE Collective – Open-access Electrical Engineering books and resources, created by EE students for EE students." />
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand">
+        <div class="brand-mark">EE</div>
+        <div class="brand-title">EE Collective</div>
+      </a>
+
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#books">Books</a></li>
+          <li><a href="#how-it-helps">Why this project</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+          <li><a href="#authors">Authors</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="chip chip-soft" data-animate="fade-in-down">
+            By <strong>Shreyash Dwivedi</strong> &amp; <strong>Ratandeep Choudhary</strong>
+          </p>
+          <h1 data-animate="fade-in-up">
+            Power systems,
+            <span class="accent-text">SCI Lab</span><br/>
+            explained like a project, not a textbook.
+          </h1>
+          <p class="hero-subtitle" data-animate="fade-in-up" data-delay="0.1">
+            Two open-access books that combine fundamentals, real institute data,
+            and hands-on simulation using SCI Lab. Made for Electrical Engineering students
+            who learn best by doing.
+          </p>
+
+          <div class="hero-actions" data-animate="fade-in-up" data-delay="0.2">
+            <a href="#books" class="btn btn-ghost">Explore contents</a>
+          </div>
+
+          <div class="hero-meta" data-animate="fade-in-up" data-delay="0.3">
+            <div class="meta-item">
+              <span class="meta-label">Format</span>
+              <span class="meta-value">PDF · Free access</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Focus</span>
+              <span class="meta-value">Power, data, simulation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right" data-animate="fade-in-left">
+          <div class="preview-frame">
+            <div class="preview-header">
+              <div class="dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="preview-title">Project snapshot</span>
+            </div>
+
+            <div class="preview-body">
+              <div class="preview-stat-row">
+                <div class="preview-stat">
+                  <span class="preview-stat-label">Books</span>
+                  <span class="preview-stat-value">2</span>
+                </div>
+                <div class="preview-stat">
+                  <span class="preview-stat-label">Discipline</span>
+                  <span class="preview-stat-value">EE</span>
+                </div>
+                <div class="preview-stat">
+                  <span class="preview-stat-label">Access</span>
+                  <span class="preview-stat-value">Open</span>
+                </div>
+              </div>
+
+              <div class="preview-chart">
+                <div class="preview-chart-track"></div>
+                <div class="preview-chart-bars">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <p class="preview-caption">
+                From fundamentals and phasor diagrams to SCI Lab scripts:
+                everything organized in one place for easy reference.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOKS ================= -->
+    <section class="section" id="books">
+      <div class="container">
+        <header class="section-header" data-animate="fade-in-up">
+          <h2>The books</h2>
+          <p>
+            Designed to work together: one builds your intuition about power systems,
+            the other shows you how to explore the same ideas in SCI Lab.
+          </p>
+        </header>
+
+        <div class="grid books-grid">
+          <!-- Fundamentals of Power -->
+          <article class="card book-card" data-animate="fade-in-up">
+            <div class="card-label-row">
+              <span class="chip chip-strong chip-outline">Fundamentals of Power</span>
+              <span class="pill pill-soft">Published</span>
+            </div>
+            <h3>Understand how power actually flows.</h3>
+            <p class="card-body-text">
+              A structured introduction to electrical power—generation, transmission,
+              distribution—backed by examples and data based on your institute’s
+              real infrastructure.
+            </p>
+
+            <ul class="card-list">
+              <li>Basic electrical engineering recap with clear diagrams.</li>
+              <li>Generation, transmission and distribution explained with real values.</li>
+              <li>Campus power system as a running example and data source.</li>
+            </ul>
+
+            <div class="card-actions">
+              <a href="https://sdee001.github.io/Fundamentals-of-Power/"
+                 class="btn btn-primary"
+                 target="_blank"
+                 rel="noopener">
+                Read online
+              </a>
+            </div>
+          </article>
+
+          <!-- SCI Lab Tutorials -->
+          <article class="card book-card" data-animate="fade-in-up" data-delay="0.1">
+            <div class="card-label-row">
+              <span class="chip chip-strong chip-outline">SCI Lab Tutorials</span>
+              <span class="pill pill-soft pill-soon">In development</span>
+            </div>
+            <h3>Turn concepts into code and plots.</h3>
+            <p class="card-body-text">
+              A practical guide to SCI Lab for Electrical Engineering:
+              from basic syntax and plotting to data analysis and power system
+              simulations linked to topics from Fundamentals of Power.
+            </p>
+
+            <ul class="card-list">
+              <li>Getting comfortable with SCI Lab as a daily tool.</li>
+              <li>Plotting, data analysis and small simulation workflows.</li>
+              <li>Examples that mirror chapters from Fundamentals of Power.</li>
+            </ul>
+
+            <div class="card-actions">
+              <!-- Replace # with actual PDF or repo link when ready -->
+              <a href="#downloads" class="btn btn-primary btn-disabled" aria-disabled="true">
+                Tutorial book coming soon
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT HELPS ================= -->
+    <section class="section section-alt" id="how-it-helps">
+      <div class="container two-column">
+        <div class="column" data-animate="fade-in-right">
+          <h2>Why this project exists</h2>
+          <p class="lead">
+            The goal is simple: make power systems and scientific computing feel
+            approachable for Electrical Engineering students.
+          </p>
+          <div class="points">
+            <div class="point">
+              <h3>Grounded in real infrastructure</h3>
+              <p>
+                The examples and data are based on an actual institute power system,
+                so equations connect directly to what you see on campus.
+              </p>
+            </div>
+            <div class="point">
+              <h3>From paper to simulation</h3>
+              <p>
+                The SCI Lab tutorials reuse the same ideas from the theory book,
+                but expressed as code, plots and small experiments.
+              </p>
+            </div>
+            <div class="point">
+              <h3>Open, remixable, sharable</h3>
+              <p>
+                Everything is free to download and share. Teachers can adapt it
+                for class; students can extend it for projects and labs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column" data-animate="fade-in-left">
+          <div class="note-card">
+            <h3>Use it like a toolkit</h3>
+            <ul class="note-list">
+              <li>Skim chapters before a lecture to anchor the concepts.</li>
+              <li>Use SCI Lab examples as templates for your own assignments.</li>
+              <li>Plug in your own measurements from lab or field visits.</li>
+              <li>Adapt figures and scripts for reports or presentations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AUTHORS / CONTACT ================= -->
+    <section class="section section-alt" id="authors">
+      <div class="container two-column">
+        <div class="column" data-animate="fade-in-right">
+          <h2>About the authors</h2>
+          <p class="lead">
+            This project is built by Electrical Engineering students for
+            Electrical Engineering students.
+          </p>
+
+          <div class="author-grid">
+            <div class="author-box">Shreyash Dwivedi</div>
+            <div class="author-box">Ratandeep Choudhary</div>
+                </div>
+
+          <p class="small">
+            Found something to improve? Have an idea for a new example or dataset?
+            You’re welcome to suggest changes or contribute.
+          </p>
+        </div>
+
+        <div class="column" data-animate="fade-in-left">
+          <div class="note-card">
+            <h3>Get in touch</h3>
+            <ul class="contact-list">
+             <li>
+  <span class="contact-label">Email</span>
+  <a href="mailto:sdee001@proton.me">sdee001@proton.me</a>
+</li>
+<li>
+  <span class="contact-label">GitHub</span>
+  <a href="https://github.com/sdee001" target="_blank" rel="noopener">github.com/sdee001</a>
+</li>
+            </ul>
+
+            <h4 class="cite-heading">How to reference</h4>
+            <code class="cite-block">
+Shreyash Dwivedi and Ratandeep Choudhary,
+"Fundamentals of Power" &amp; "SCI Lab Tutorials",
+open-access digital books, YEAR.
+Available at: sdee001.github.io/EE-Collective/
+            </code>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> EE Collective</span>
+    <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
+  </div>
+</footer>
+
+</body>
+</html>
+
