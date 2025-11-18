@@ -769,10 +769,6 @@ body {
 /* =============== ANIMATIONS =============== */
 
 [data-animate] {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity var(--transition-med), transform var(--transition-med);
-}
 
 [data-animate].animated {
   opacity: 1;
