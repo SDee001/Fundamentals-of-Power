@@ -28,7 +28,7 @@ This project consists of two complementary books:
 
 ##  Live Website
 Accessible online via GitHub Pages:  
-[Visit]([https://sdee001.github.io/Fundamentals-of-Power/](https://sdee001.github.io/EE-Collective/))
+[Visit]([https://sdee001.github.io/Fundamentals-of-Power/])
 
 
 > No login, no ads, no tracking — fully free & open.
