@@ -2,7 +2,7 @@
 
 A collaborative, open-access learning project containing:
 - Fundamentals of Power (Published)
-- Acentia SCI Lab (In Development)
+- Ascentia SCI Lab (In Development)
 
 ---
 
@@ -14,7 +14,7 @@ This project consists of two complementary books:
 | Book | Status | Format |
 |------|--------|--------|
 | **Fundamentals of Power** | Published |Web version |
-| **Acentia SCI Lab** | In development |Web version (coming soon) |
+| **Ascentia SCI Lab** | In development |Web version (coming soon) |
 
 ---
 
