@@ -55,4 +55,42 @@ const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
+// ===== Auto-rotating "Why this project exists" cards =====
+(function () {
+  const track = document.getElementById("projectTrack");
+  const indicators = document.querySelectorAll("#projectIndicators .indicator");
+  if (!track || indicators.length === 0) return;
 
+  const cards = track.querySelectorAll(".project-card");
+  const total = cards.length;
+  let current = 0;
+
+  function goTo(index) {
+    current = (index + total) % total; // wrap around
+    const offset = -current * 100; // 100% width per card
+    track.style.transform = `translateX(${offset}%)`;
+
+    indicators.forEach((dot, i) => {
+      dot.classList.toggle("active", i === current);
+    });
+  }
+
+  // auto-advance every 3 seconds
+  let timer = setInterval(() => goTo(current + 1), 3000);
+
+  // allow clicking dots to navigate
+  indicators.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      clearInterval(timer);
+      goTo(i);
+      // restart timer after manual click
+      timer = setInterval(() => goTo(current + 1), 3000);
+    });
+  });
+
+  // initial position
+  goTo(0);
+})();
+
+
+// curiosity got you here! I am glad
