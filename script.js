@@ -1,4 +1,3 @@
-// Smooth scroll (for older browsers that ignore CSS scroll-behavior)
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {
     const targetId = link.getAttribute("href").slice(1);
@@ -10,24 +9,32 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// Mobile nav toggle
+
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
 
 if (navToggle && navLinks) {
-  navToggle.addEventListener("click", () => {
+  navToggle.addEventListener("click", (e) => {
+
+    e.stopPropagation(); 
     navLinks.classList.toggle("open");
   });
 
-  // Close menu when clicking a link on mobile
   navLinks.querySelectorAll("a").forEach(a => {
     a.addEventListener("click", () => {
       navLinks.classList.remove("open");
     });
   });
+
+
+  document.addEventListener("click", (e) => {
+    if (navLinks.classList.contains("open") && !navLinks.contains(e.target)) {
+      navLinks.classList.remove("open");
+    }
+  });
 }
 
-// Scroll-based reveal animations
+
 const animatedEls = document.querySelectorAll("[data-animate]");
 
 const observer = new IntersectionObserver(
@@ -50,12 +57,12 @@ const observer = new IntersectionObserver(
 
 animatedEls.forEach(el => observer.observe(el));
 
-// Dynamic year in footer
+
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
-// ===== Auto-rotating "Why this project exists" cards =====
+
 (function () {
   const track = document.getElementById("projectTrack");
   const indicators = document.querySelectorAll("#projectIndicators .indicator");
@@ -66,8 +73,8 @@ if (yearSpan) {
   let current = 0;
 
   function goTo(index) {
-    current = (index + total) % total; // wrap around
-    const offset = -current * 100; // 100% width per card
+    current = (index + total) % total;
+    const offset = -current * 100;
     track.style.transform = `translateX(${offset}%)`;
 
     indicators.forEach((dot, i) => {
@@ -75,20 +82,20 @@ if (yearSpan) {
     });
   }
 
-  // auto-advance every 3 seconds
+
   let timer = setInterval(() => goTo(current + 1), 3000);
 
-  // allow clicking dots to navigate
+
   indicators.forEach((dot, i) => {
     dot.addEventListener("click", () => {
       clearInterval(timer);
       goTo(i);
-      // restart timer after manual click
+
       timer = setInterval(() => goTo(current + 1), 3000);
     });
   });
 
-  // initial position
+
   goTo(0);
 })();
 
